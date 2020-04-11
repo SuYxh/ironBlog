@@ -1,0 +1,342 @@
+<template>
+
+  <article class="home-page-one-wrapper">
+    <section class="description">
+      <img
+        v-if="$frontmatter.heroImage"
+        :style="heroImageStyle || {}"
+        :src="$withBase($frontmatter.heroImage)"
+        alt="hero">
+      <h1>{{ $frontmatter.heroText || $title }}</h1>
+      <p class="description">{{ $description }}</p>
+      <router-link class="btn-about" :to="$frontmatter.actionLink">{{ $frontmatter.actionText }}</router-link>
+      <!-- <img class="banner" src="./images/blog.svg" alt=""> -->
+    </section>
+
+
+    <!-- 第一节 -->
+    <section class="wish yesterday">
+      <div class="wish-inner">
+        <div class="img-wrapper">
+          <img src="./images/yesterday.svg" alt="">
+          <!-- <img src="./images/3.jpg" alt=""> -->
+        </div>
+        <div class="text-wrapper">
+          <h1>{{ features[0].title }}</h1>
+          <p class="description">{{ features[0].details }}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第二节 -->
+    <section class="wish today">
+      <div class="wish-inner">
+        <div class="text-wrapper">
+          <h1>{{ features[1].title }}</h1>
+          <p class="description">{{ features[1].details }}</p>
+        </div>
+        <div class="img-wrapper">
+          <img src="./images/today.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- 第三节 -->
+    <section class="wish tomorrow">
+      <div class="wish-inner">
+        <div class="img-wrapper">
+          <img src="./images/tomorrow.svg" alt="">
+        </div>
+        <div class="text-wrapper">
+          <h1>{{ features[2].title }}</h1>
+          <p class="description">{{ features[2].details }}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第四节 -->
+    <section class="wish today">
+      <div class="wish-inner">
+        <div class="text-wrapper">
+          <h1>白校臣</h1>
+          <p class="description">熟练掌握HTML\CSS\JS，精通vue具有独立开发组件经验，熟悉PHP和Node.js</p>
+        </div>
+        <div class="img-wrapper">
+          <img src="./images/today.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <section class="md-content-wrapper">
+      <Content/>
+    </section>
+
+
+
+  </article>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      downloads: 0
+    }
+  },
+
+  computed: {
+    features () {
+      return this.$frontmatter.features
+    },
+    heroImageStyle () {
+      return this.$frontmatter.heroImageStyle || {
+        maxHeight: '200px',
+        margin: '6rem auto 1.5rem'
+      }
+    }
+  },
+
+  created () {
+    const date = new Date()
+    const year = date.getFullYear()
+    const mounth = date.getMonth() + 1
+    const day = date.getDate()
+    this.npmPackageDownloads('vuepress-theme-reco', `2018-09-12:${year}-${mounth}-${day}`).then(res => {
+      this.downloads = this.toThousandslsFilter(res)
+    })
+  },
+
+  methods: {
+    toThousandslsFilter (num) {
+      const numStr = String(num)
+      if (numStr === '' || numStr == undefined) {
+        return ''
+      }
+      const IntPart = /\./g.test(numStr) ? numStr.slice(0, numStr.indexOf('.')) : numStr
+      const FloatPart = /\./g.test(numStr) ? numStr.substring(numStr.indexOf('.')) : ''
+
+      const orderPrice2 = (+IntPart || 0).toString().replace(/^-?\d+/g, m => m.replace(/(?=(?!\b)(\d{3})+$)/g, ',')) + FloatPart
+      return orderPrice2
+    },
+
+    npmPackageDownloads (packages, dateRange) {
+      packages = this._handlePackages(packages)
+      dateRange = this._handleDateRange(dateRange)
+      return this._getDownloadsOfDateRange(packages, dateRange)
+    },
+
+    async _getDownloadsOfDateRange (packages, dateRange) {
+      let downloads = 0
+      if (Array.isArray(dateRange)) {
+        let fetchPromise = []
+        dateRange.map(item => {
+          fetchPromise.push(this._fetch(packages, item))
+        })
+        const result = await Promise.all(fetchPromise)
+        downloads = result.reduce((all, next) => {
+          return all + next.downloads
+        }, 0)
+        return downloads
+      }
+      const result = await this._fetch(packages, dateRange)
+      downloads = result.downloads
+      return downloads
+    },
+
+    _fetch (packages, dateRange) {
+      const BASE_URI = 'https://api.npmjs.org/downloads/point/'
+      return new Promise ((resolve, reject) => {
+        fetch(`${BASE_URI}${dateRange}/${packages}`).then(this._parseJSON).then(res => {
+          resolve(res)
+        }).catch(err => {
+          reject(err)
+        })
+      })
+    },
+
+    _parseJSON (response) {
+      return response.json()
+    },
+
+    _handleDateRange (dateRange) {
+      const index = dateRange.indexOf(':')
+      if (index> -1) {
+        const dr = dateRange.split(':')
+        const newDateRange = dr
+        const YEAR = 365 * 24 * 60 * 60 * 1000
+        const DATE_RANGE = new Date(dr[1]).getTime() - new Date(dr[0]).getTime()
+        const year = parseInt(DATE_RANGE / YEAR)
+        if (year > 0) {
+          for (let i = 0; i < year; i++) {
+            const date = this._getDate(newDateRange[i])
+            newDateRange.splice(i + 1, 0, date)
+          }
+          for (let i = 0, length = newDateRange.length; i < length - 1; i++) {
+            newDateRange[i] = `${newDateRange[i]}:${newDateRange[i + 1]}`
+          }
+          newDateRange.length = year + 1
+          return newDateRange
+        }
+        return dateRange
+      }
+      return dateRange
+    },
+
+    _getDate (date) {
+      const dateArr = date.split('-')
+      dateArr[0] = Number(dateArr[0]) + 1
+      return dateArr.join('-')
+    },
+
+    _handlePackages (packages) {
+      if (Array.isArray(packages)) {
+        return `-,${packages.join(',')}`
+      }
+      return packages
+    }
+  }
+}
+</script>
+
+
+<style lang="stylus" scoped>
+.home-page-one-wrapper {
+  padding-top: 3.4rem;
+
+  section {
+    &.description {
+      box-sizing: border-box;
+      margin: 0 auto 6rem;
+      max-width: 46rem;
+      width: 100%;
+      text-align: center;
+      font-size :1.5rem;
+
+      h1 {
+        margin-top: 4rem;
+      }
+
+      p {
+        margin-bottom: 2rem;
+      }
+
+      .btn-about {
+        margin: 2rem 0;
+        display: inline-block;
+        padding: .6rem 1.2rem;
+        border-radius: 0.25rem;
+        background: $accentColor;
+        color: #fff;
+        font-size: 1rem;
+      }
+
+      .banner {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &.wish {
+      overflow: hidden;
+
+      &.yesterday, &.tomorrow {
+        background: var(--code-color);
+      }
+
+      .wish-inner {
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 2rem;
+        max-width: 56rem;
+        width: 100%;
+        min-height: 25rem;
+        display: flex;
+        align-items: center;
+
+        > div {
+          flex: auto;
+
+          &.img-wrapper {
+            max-width: 22rem;
+
+            img {
+              display: block;
+              width: 100%;
+            }
+          }
+
+          &.text-wrapper {
+            box-sizing: border-box;
+            padding: 0 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $MQMobile) {
+  .home-page-one-wrapper {
+    section {
+      padding: 0 2rem;
+
+      &.description {
+        h1 {
+          margin-top: 5rem;
+        }
+        .btn-about {
+          font-size .9rem
+        }
+      }
+
+      &.md-content-wrapper {
+        padding: 0;
+      }
+
+      &.wish {
+        .wish-inner {
+          display: block;
+          padding: 2rem 0;
+
+          .img-wrapper {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $MQMobileNarrow) {
+  .home-page-one-wrapper {
+    section {
+      padding: 0 2rem;
+
+      &.description {
+        h1 {
+          margin-top: 5rem;
+        }
+        .btn-about {
+          font-size .8rem
+        }
+      }
+
+      &.md-content-wrapper {
+        padding: 0;
+      }
+
+      &.wish {
+        .wish-inner {
+          display: block;
+          padding: 2rem 0;
+
+          .img-wrapper {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+</style>
