@@ -10,7 +10,7 @@ npm run build
 cd public
 
 # 如果是发布到自定义域名
-# echo 'vp.ironc.cn' > CNAME
+ echo 'vp.ironc.cn' > CNAME
 
 
 git init
