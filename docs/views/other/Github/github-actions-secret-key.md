@@ -1,7 +1,7 @@
 ---
 title: 如何在 GitHub Actions 时使用 secretKey
 date: 2020-03-20
-author: yxh 🐸
+author: yxh 
 tags:
   - Github Actions
   - Secret Key
@@ -13,7 +13,7 @@ categories:
 
 ### 问题
 
-当我参考[这篇](https://www.lasy.site/views/%E5%89%8D%E7%AB%AF/%E4%BD%BF%E7%94%A8%20GitHub%20Actions%20%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2.html)，使用 `Github Action` 自动部署的时候发现要使用 Secret Key 去使用 `VSSUE` 评论功能，我就犯愁了。
+使用 `Github Action` 自动部署的时候发现要使用 Secret Key 去使用 `VSSUE` 评论功能，我就犯愁了。
 
 直接写在 `config` 里虽说并没有谁会盗用（吧 😃），但显然不太安全。这是原 workflow 文件中下面这段启发了我。其他的变量难道也可以这样传到服务器上？
 
@@ -30,7 +30,7 @@ with:
 
 简单说就是在对应 repo 的 `Secrets` 区域里输入。
 
-![Screenshot 2020-03-23 13.08.05.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/470919/6d81c510-7f25-a039-5087-f07854d6d75e.png)
+![Screenshot.png](http://qn.huat.xyz/content/20200412185726.png)
 
 **注意⚠️**：上图中画圈的位置的 `A`, 正确的英语语法是 `AN`, 不过这篇教程统一用 `A`, 和下面的
 ::: v-pre
@@ -79,7 +79,7 @@ ${{ secrets.YOURKEY }}
 ```js
   vssueConfig: {
     platform: 'github',
-    owner: 'xyyolab',
+    owner: 'ironc',
     repo: 'blog',
     clientId: process.env.VSSUEID,
     clientSecret: process.env.VSSUESECRET
@@ -92,12 +92,9 @@ ${{ secrets.YOURKEY }}
 
 ![Screenshot 2020-03-23 13.36.35.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/470919/0a508150-59e8-948c-4601-b57012db2ed6.png)
 
-- 完整的 `main.yaml` 请参考我的 [Github](https://github.com/xyyolab/blog/blob/master/.github/workflows/main.yml)
+- 完整的 `main.yaml` 请参考 [Github](https://github.com/SuYxh/iron/blob/master/documents/main.yml)
 
 看起来一个小步骤但解决了大问题呢 💃。
 
 ---
 
-:::tip
-本文作者 [xyh 🐸](https://github.com/xyyolab)，博客 [xyh 🐸](https://blog.xyyolab.com)。
-:::

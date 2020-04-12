@@ -1,6 +1,6 @@
 ---
 title: Pages 部署
-date: 2019-05-14
+date: 2020-03-04
 lang: 'zh-CN'
 sidebar: 'auto'
 categories:

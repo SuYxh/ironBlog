@@ -22,7 +22,7 @@ module.exports = {
         title: 'CSS特效',
         collapsable: false,
         children: [
-          'abstcss特效'
+          'css特效'
         ]
       }
     ],

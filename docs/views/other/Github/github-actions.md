@@ -37,7 +37,6 @@ categories:
 
 那么开始打造我们的 GitHub Actions 吧。
 
-我创建了一个[示例项目](https://github.com/LasyIsLazy/gh-pages-Actions-demo)在我的 GitHub 仓库，用的是 VuePress（一个 Vue 官方的静态站点生成器）。
 
 ## 设置 Secrets
 
@@ -51,7 +50,7 @@ categories:
 
 令牌名字一定要叫：`ACCESS_TOKEN`，这是后面的 Action 需要用的。
 
-![1W35i4.png](https://s2.ax1x.com/2020/02/08/1W35i4.png)
+![1W35i4.png](http://qn.huat.xyz/content/20200412190617.png)
 
 ## 编写 workflow 文件
 
@@ -61,7 +60,7 @@ categories:
 
 ![123CDO.png](https://s2.ax1x.com/2020/02/07/123CDO.png)
 
-创建`.github/workflows/main.yml`文件（可以到我的[示例仓库](https://github.com/LasyIsLazy/gh-pages-action-demo/blob/master/.github/workflows/main.yml)中查看），内容如下：
+创建`.github/workflows/main.yml`文件（可以到[Github](https://github.com/SuYxh/iron/blob/master/documents/main.yml)中查看），内容如下：
 
 ```yml
 name: Deploy GitHub Pages
@@ -126,11 +125,11 @@ jobs:
 
 如果部署失败你会收到一封部署失败的邮件
 
-![1WR8YQ.png](https://s2.ax1x.com/2020/02/08/1WR8YQ.png)
+![1WR8YQ.png](http://qn.huat.xyz/content/20200412191015.png)
 
 点击可以跳转到仓库的 Action 页面查看日志
 
-![1WRclR.png](https://s2.ax1x.com/2020/02/08/1WRclR.png)
+![1WRclR.png](http://qn.huat.xyz/content/20200412191056.png)
 
 展开错误的部署 job 查看日志
 
@@ -154,13 +153,13 @@ jobs:
 
 点击进入查看部署情况。
 
-![147bLD.png](https://s2.ax1x.com/2020/02/10/147bLD.png)
+![147bLD.png](http://qn.huat.xyz/content/20200412191301.png)
 
 部署成功，全是绿色~
 
-接下来访问网站验证一下：[https://lasyislazy.github.io/gh-pages-action-demo/](https://lasyislazy.github.io/gh-pages-action-demo/)
+接下来访问网站验证一下：
 
-![1W4BuR.png](https://s2.ax1x.com/2020/02/08/1W4BuR.png)
+![1W4BuR.png](http://qn.huat.xyz/content/20200412191357.png)
 
 完美结束，享受 GitHub Actions 带来的愉快体验吧~
 
@@ -203,13 +202,6 @@ jobs:
 实在找不到就得自己写 action 了，本篇就不讨论了。
 
 
-
-以上便是本篇教程全部内容，本篇首发于我的个人博客：[https://www.lasy.site/](https://www.lasy.site/)
-
-
-:::tip
-本文作者 [Lasy](https://github.com/LasyIsLazy)，博客 [Lasy](https://www.lasy.site)。
-:::
 
 参考链接：
 

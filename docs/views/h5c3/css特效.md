@@ -1,24 +1,29 @@
-# 常见CSS特效
+---
+title: 常见CSS特效
+date: 2020-03-14
+lang: 'zh-CN'
+sidebar: 'auto'
+---
 
-### 常用CSS属性
+## 常用CSS属性
 
 [transform属性:应用于元素的2D或3D转换](https://www.w3cschool.cn/cssref/css3-pr-transform.html)
 
 [transition属性:是一个简写属性，用于设置四个过渡属性](https://www.w3cschool.cn/cssref/pr-transition.html)
 
-### 图片放大效果
+## 图片放大效果
 
 先设置图片的过度属性`transition: all 0.5s;`,所有属性均发生改变；在设置需要如何发生改变`transform: scale(1.1);`,2D缩放变化；设置一下 hover ，当鼠标移入的时候即可发生变化。
 
 [效果演示](https://kkb.huat.xyz/css_tx/01-%E5%9B%BE%E7%89%87%E6%94%BE%E5%A4%A7%E6%95%88%E6%9E%9C.html)
 
-### 京东多图效果
+## 京东多图效果
 
 先设置图片的过度属性`transition: margin-left 0.4s;`；在设置需要如何发生改变？`margin-left: -10px;`,2D缩放变化；设置一下 hover ，当鼠标移入的时候即可发生变化。
 
 [效果演示](https://kkb.huat.xyz/css_tx/02-%E4%BA%AC%E4%B8%9C%E5%A4%9A%E5%9B%BE%E6%95%88%E6%9E%9C.html)
 
-### 两面翻转的图片
+## 两面翻转的图片
 
 **单页图片的翻转**：先设置图片的过度属性`transition: all 1s;`,所有属性均发生改变；在设置需要如何发生改变` transform: rotateY(180deg);`,沿着 Y 轴的 3D 旋转180度，到此时简单的反转效果已经完成；设置一下 hover ，当鼠标移入的时候即可发生变化。
 
@@ -29,7 +34,7 @@ z-index: 1;                       /* 红色K 显示在上方 */
 backface-visibility: hidden;    /* backface-visibility 属性定义当元素不面向屏幕时是否可见 */
 ```
 
-### 6张图片共旋转一周
+## 6张图片共旋转一周
 
 先设置图片的过度属性` transition: all 0.6s; `；在设置需要如何发生改变？在这里6张图片每张旋转60度，得有一个旋转点，通过[transform-origin](https://www.w3cschool.cn/cssref/css3-pr-transform-origin.html)属性来设置，代码：`transform-origin: top right;`然后在对每个图片进行分别设置，其中选择器使用`*:nth-child(n)匹配⽗元素的第n个⼦元素`，在给每个图片设置属性` transform: rotate(60deg); /* 定义 2D 旋转 */`, 且每个图片旋转角度递增 **60度**；最后设置一下hover,部分代码如下。  [效果演示](https://kkb.huat.xyz/css_tx/04-%E6%97%8B%E8%BD%AC%E7%9A%84%E6%A5%9A%E4%B9%94%E4%BC%A0.html)
 
@@ -39,7 +44,7 @@ transform-origin: top right;
 div:hover img:nth-child(1){transform: rotate(60deg);}
 ```
 
-### 会翻转的文字
+## 会翻转的文字
 
 先设置文字（例如：前端全栈）和基本样式；在设置其翻转起来的文字（前端全栈）和样式；设置其翻转起来的文字内容，使用属性 `content: attr(data-zhi);` 其中`content`后面也可以直接跟字符串，这里使用的是使用`attr()`获取自定义属性的值；使用`:before`和`:after`来插入翻转起来的文字和其影子；注意使用 `z-index`来调整图层的顺序！ [效果演示](https://kkb.huat.xyz/css_tx/06-%E4%BC%9A%E7%BF%BB%E8%BD%AC%E7%9A%84%E6%96%87%E5%AD%97.html)
 
