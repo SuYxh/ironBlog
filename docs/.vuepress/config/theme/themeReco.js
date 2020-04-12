@@ -14,7 +14,7 @@ module.exports = {
   // 备案号
   record: '鄂ICP备18031450号-2',
   // 项目开始时间
-  startYear: '2020',
+  startYear: '2018',
   algolia: {
     apiKey: '17e8939e8832ec7a99b283d10e1435f5',
     indexName: 'iron'

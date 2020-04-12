@@ -26,9 +26,18 @@ module.exports = {
     },
    
     { text: '技术栈', link: '/categories/Github/', icon: 'reco-blog'},
-    { text: '组件库', link: '/views/other/recommend.html', icon: 'reco-document' },
-    { text: '项目展示', link: '/views/other/theme-example.html', icon: 'reco-category'},
+    { text: '组件库', link: '/views/zujian/zujian.html', icon: 'reco-document' },
+    { text: '项目展示', link: '/views/project/project.html', icon: 'reco-category'},
     { text: '多人协作', link: '/views/cooperation/', icon: 'reco-account'},
-    { text: 'GitHub', link: 'https://github.com/', icon: 'reco-github'}
+    {
+      text: '面试',
+      icon: 'reco-coding',
+      items: [
+        { text: 'HTML', link: '/views/interview/html.html' },
+        { text: 'CSS', link: '/views/interview/css.html' }
+      ]
+    },
+    { text: 'Book', link: '/views/book/', icon: 'reco-eye'},
+    { text: 'GitHub', link: 'https://github.com/SuYxh/ironBlog', icon: 'reco-github'}
   ]
 }

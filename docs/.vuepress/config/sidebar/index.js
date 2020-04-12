@@ -92,6 +92,19 @@ module.exports = {
           ''
         ]
       }
+    ],
+    '/views/book/': [
+      {
+        title: '读一本好书',
+        collapsable: true,
+        children: [
+          '',
+          '《刻意练习》',
+          '《终身成长》',
+          '《认知天性》'
+
+        ]
+      }
     ]
   // }
 }
