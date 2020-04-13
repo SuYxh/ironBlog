@@ -93,6 +93,44 @@ module.exports = {
         ]
       }
     ],
+    '/views/xcx/weui': [
+      {
+        title: '基础组件',
+        collapsable: true,
+        children: [
+          ''
+        ]
+      },
+      {
+        title: '表单组件',
+        collapsable: true,
+        children: [
+          ''
+        ]
+      }
+    ],
+
+    '/views/project/git': [
+      {
+        title: '基础',
+        collapsable: true,
+        children: [
+          ''
+        ]
+      }
+    ],
+    '/views/project/p_webpack': [
+      {
+        title: '基础',
+        collapsable: true,
+        children: [
+          ''
+        ]
+      }
+    ],
+
+
+
     '/views/book/': [
       {
         title: '读一本好书',

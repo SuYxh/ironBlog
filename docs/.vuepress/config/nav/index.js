@@ -19,22 +19,35 @@ module.exports = {
         {
           text: '小程序', items: [
             { text: '小程序', link: '/views/xcx/' },
-            { text: '常见问题', link: '/views/other/question.html' }
+            { text: 'WEUI', link: '/views/xcx/weui/index.md' }
+          ]
+        },
+        {
+          text: '工程', items: [
+            { text: 'Git', link: '/views/project/git/index.md' },
+            { text: 'webpack', link: '/views/project/p_webpack/index.md' }
           ]
         }
       ]
     },
    
     { text: '技术栈', link: '/categories/Github/', icon: 'reco-blog'},
-    { text: '组件库', link: '/views/zujian/zujian.html', icon: 'reco-document' },
-    { text: '项目展示', link: '/views/project/project.html', icon: 'reco-category'},
-    { text: '多人协作', link: '/views/cooperation/', icon: 'reco-account'},
+    { text: '团队规范', link: '/views/cooperation/', icon: 'reco-account'},
+    {
+      text: '项目展示',
+      icon: 'reco-category',
+      items: [
+        { text: '项目', link: '/views/project/project.html' },
+        { text: '组件库', link: '/views/project/zujian.html' }
+      ]
+    },
     {
       text: '面试',
       icon: 'reco-coding',
       items: [
         { text: 'HTML', link: '/views/interview/html.html' },
-        { text: 'CSS', link: '/views/interview/css.html' }
+        { text: 'CSS', link: '/views/interview/css.html' },
+        { text: 'Vue', link: '/views/interview/vue.html' }
       ]
     },
     { text: 'Book', link: '/views/book/', icon: 'reco-eye'},
