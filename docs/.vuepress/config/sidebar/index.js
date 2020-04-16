@@ -39,8 +39,9 @@ module.exports = {
           'js_datatype',
           'JavaScript操作符-运算符',
           'JavaScript语句',
+          'js_for循环',
           'JavaScript数组',
-          'jsfun',
+          'js_fun',
           'JavaScript对象',
           'JavaScript代码规范'
 
@@ -55,8 +56,15 @@ module.exports = {
         ]
       }
     ],
-
-
+    '/views/es6/': [
+      {
+        title: '基础',
+        collapsable: true,
+        children: [
+          ''
+        ]
+      }
+    ],
     '/views/vue/': [
       {
         title: '基础',

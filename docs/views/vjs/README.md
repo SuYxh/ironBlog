@@ -1,10 +1,8 @@
 ---
 title: JavaScript介绍
 date: 2019-03-24
+author: yxh 
 ---
-
-
-## JavaScript 介绍
 
 JavaScript 是脚本语言
 JavaScript 是一种轻量级的编程语言。

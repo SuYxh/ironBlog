@@ -6,7 +6,8 @@ module.exports = {
         { 
           text: '基础', items: [
             { text: 'H5C3', link: '/views/h5c3/' },
-            { text: 'JS', link: '/views/vjs/' }
+            { text: 'JS', link: '/views/vjs/' },
+            { text: 'ES6', link: '/views/es6/' }
           ],
         },
         {
