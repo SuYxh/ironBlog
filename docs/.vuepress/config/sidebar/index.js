@@ -15,7 +15,8 @@ module.exports = {
         collapsable: false,
         children: [
           'css',
-          'css_selector'
+          'css_selector',
+          'css常用代码'
         ]
       },
       {
@@ -43,6 +44,7 @@ module.exports = {
           'JavaScript数组',
           'js_fun',
           'JavaScript对象',
+          'JavaScript常用代码',
           'JavaScript代码规范'
 
 

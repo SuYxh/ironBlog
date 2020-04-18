@@ -1,5 +1,5 @@
 ---
-title: 金句良言
+title: 资源库
 date: 2020-03-13
 lang: 'zh-CN'
 author: yxh
@@ -19,6 +19,7 @@ keys:
 
 #### HTML&CSS
 -  HTML/CSS开发规范指南  https://github.com/doyoe/html-css-guide
+- CSS 雪碧图  https://www.toptal.com/developers/css/sprite-generator
 
 #### JavaScript
 
@@ -42,6 +43,7 @@ keys:
 
 - 面试资源：https://juejin.im/post/5e5dc46ce51d4526ce614cc1#heading-4
 - vue面试题：https://juejin.im/post/5d153267e51d4510624f9809
+- 2020年前端面试复习必读文章 https://juejin.im/entry/5e8b24b7e51d45471655081a
 
 #### 原型设计
 - https://lanhuapp.com/prd/?pm
