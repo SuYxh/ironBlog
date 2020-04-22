@@ -7,7 +7,9 @@ module.exports = {
         children: [
           '',
           'html',
-          'html5'
+          'html5',
+          'canvas',
+          'svg'
         ]
       },
       {
@@ -15,15 +17,16 @@ module.exports = {
         collapsable: false,
         children: [
           'css',
-          'css_selector',
-          'css常用代码'
+          'css_selector'
+          
         ]
       },
       {
-        title: 'CSS特效',
+        title: '实例',
         collapsable: false,
         children: [
-          'css特效'
+          'css特效',
+          'css常用代码'
         ]
       }
     ],
@@ -44,7 +47,6 @@ module.exports = {
           'JavaScript数组',
           'js_fun',
           'JavaScript对象',
-          'JavaScript常用代码',
           'JavaScript代码规范'
 
 
@@ -54,8 +56,24 @@ module.exports = {
         title: '进阶',
         collapsable: false,
         children: [
-          'js_dom'
-        ]
+          'js_dom',
+          'js_bom'
+        ]  
+      },
+      {
+        title: '高级',
+        collapsable: false,
+        children: [
+          '原型链',
+          'this'
+        ]  
+      },
+      {
+        title: '实例',
+        collapsable: false,
+        children: [
+          'JavaScript常用代码'
+        ]  
       }
     ],
     '/views/es6/': [
@@ -149,7 +167,8 @@ module.exports = {
           '',
           '《刻意练习》',
           '《终身成长》',
-          '《认知天性》'
+          '《认知天性》',
+          '《搞定》'
 
         ]
       }

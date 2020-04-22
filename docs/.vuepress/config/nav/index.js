@@ -32,7 +32,7 @@ module.exports = {
       ]
     },
    
-    { text: '技术栈', link: '/categories/Github/', icon: 'reco-blog'},
+    { text: '博客', link: '/categories/JavaScript/', icon: 'reco-blog'},
     { text: '团队规范', link: '/views/cooperation/', icon: 'reco-account'},
     {
       text: '项目展示',

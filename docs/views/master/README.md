@@ -49,7 +49,11 @@ keys:
 - https://lanhuapp.com/prd/?pm
 - https://modao.cc/
 
+#### 工具
+- markdown： https://mdnice.com/
 
+#### 优秀博主
+- 川哥  https://www.jianshu.com/u/715f89412753
 
 ## 二、思想建议
 

@@ -54,6 +54,7 @@ xiaohong['name']; // '小红'
 xiaohong.name; // '小红'
 ```
 **JavaScript规定，访问不存在的属性不报错，而是返回undefined**
+:::
 
 ## 3、对象常用操作
 - 对象添加或删除属性
@@ -99,6 +100,7 @@ var xiaoming = {
 xiaoming.hasOwnProperty('name'); // true
 xiaoming.hasOwnProperty('toString'); // false
 ```
+:::
 
 
 

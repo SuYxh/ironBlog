@@ -3,6 +3,19 @@ title: JavaScript操作符-运算符
 date: 2019-03-24
 ---
 
+## 三元运算符
+```js
+condition ? exprIfTrue : exprIfFalse
+```
+## 条件链
+```js
+function example(…) {
+    return condition1 ? value1
+         : condition2 ? value2
+         : condition3 ? value3
+         : value4;
+}
+```
 
 ## JavaScript 算术运算符
 
