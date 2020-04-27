@@ -22,10 +22,12 @@ keys:
 - CSS 雪碧图  https://www.toptal.com/developers/css/sprite-generator
 
 #### JavaScript
+- MDN https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/JavaScript_basics
 
 #### Ajax
 
 #### vue
+- 聊聊Vue.js 3.0 Beta”直播视频回放 https://juejin.im/e/vue-3
 
 #### jQuery
 
@@ -51,6 +53,9 @@ keys:
 
 #### 工具
 - markdown： https://mdnice.com/
+
+#### 其他
+- https://github.com/foru17/front-end-collect
 
 #### 优秀博主
 - 川哥  https://www.jianshu.com/u/715f89412753

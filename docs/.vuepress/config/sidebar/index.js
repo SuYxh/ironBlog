@@ -57,7 +57,9 @@ module.exports = {
         collapsable: false,
         children: [
           'js_dom',
-          'js_bom'
+          'js_bom',
+          'offset_client_scroll',
+          'js动画'
         ]  
       },
       {
