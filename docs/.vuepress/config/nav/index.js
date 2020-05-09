@@ -18,7 +18,7 @@ module.exports = {
           ]
         },
         {
-          text: '小程序', items: [
+          text: '微信', items: [
             { text: '小程序', link: '/views/xcx/' },
             { text: 'WEUI', link: '/views/xcx/weui/index.md' }
           ]

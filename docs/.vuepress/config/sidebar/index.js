@@ -2,31 +2,25 @@ module.exports = {
   // 'zh': Object.assign({}, {
     '/views/h5c3/': [
       {
-        title: 'HTML',
+        title: 'HTML5',
         collapsable: false,
         children: [
           '',
-          'html',
-          'html5',
-          'canvas',
-          'svg'
+          'H5音视频',
+          'Canvas',
+          'HTM5中的API'
         ]
       },
       {
-        title: 'CSS',
+        title: 'CSS3',
         collapsable: false,
         children: [
-          'css',
-          'css_selector'
-          
-        ]
-      },
-      {
-        title: '实例',
-        collapsable: false,
-        children: [
-          'css特效',
-          'css常用代码'
+          'CSS3-新特性之样式',
+          '新特性之选择器',
+          '新特性之颜色渐变',
+          '2D_3D转换',
+          '新特性之过渡_动画',
+          '新特性之网页布局'
         ]
       }
     ],
@@ -59,22 +53,26 @@ module.exports = {
           'js_dom',
           'js_bom',
           'offset_client_scroll',
-          'js动画'
+          'js动画',
+          'js正则表达式',
+          'JavaScript事件'
         ]  
       },
       {
-        title: '高级',
+        title: '面向对象',
         collapsable: false,
         children: [
-          '原型链',
-          'this'
-        ]  
-      },
-      {
-        title: '实例',
-        collapsable: false,
-        children: [
-          'JavaScript常用代码'
+          '对象是什么',
+          '构造函数',
+          'new命令',
+          'constructor',
+          '原型对象',
+          '创建对象的5种模式',
+          '实现继承的5种方式',
+          'Object对象中的相关方法',
+          '模块化',
+          '基于面向对象的选项卡案例'
+
         ]  
       }
     ],
