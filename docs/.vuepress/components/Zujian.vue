@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import pluginsData from '../data/pluginsData'
+import pluginsData from '../data/componentsData'
 
 export default {
   data () {

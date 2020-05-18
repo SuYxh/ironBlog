@@ -42,16 +42,7 @@ module.exports = {
         { text: '组件库', link: '/views/project/zujian.html' }
       ]
     },
-    {
-      text: '面试',
-      icon: 'reco-coding',
-      items: [
-        { text: 'HTML', link: '/views/interview/html.html' },
-        { text: 'CSS', link: '/views/interview/css.html' },
-        { text: 'Vue', link: '/views/interview/vue.html' }
-      ]
-    },
-    { text: 'Book', link: '/views/book/', icon: 'reco-eye'},
-    { text: 'GitHub', link: 'https://github.com/SuYxh/ironBlog', icon: 'reco-github'}
+    { text: 'Book', link: '/views/book/', icon: 'reco-eye'}
+    // { text: 'GitHub', link: 'https://github.com/SuYxh/ironBlog', icon: 'reco-github'}
   ]
 }

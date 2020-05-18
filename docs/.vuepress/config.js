@@ -3,12 +3,11 @@ const themeConfig = require('./config/theme/')
 
 module.exports = {
   dest: 'public',
-  // base: '/vuepress-theme-reco-doc/',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
     ['meta', { name: 'author', content: 'ironc' }],
-    ['meta', { name: 'keywords', content: 'vuepress,iron,ironc,theme,blog,主题' }],
+    ['meta', { name: 'keywords', content: 'vuepress,iron,ironc,ironBlog' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#42b983' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -27,20 +26,7 @@ module.exports = {
       description: '代码千万行, 注释第一行！'
     }   
   },
-  markdown: {
-    // lineNumbers: true
-  },
   plugins: [
-    [
-      '@vuepress/pwa', 
-      {
-        serviceWorker: true,
-        updatePopup: {
-          message: "发现新内容可用",
-          buttonText: "刷新"
-        }
-      }
-    ],
     [
       '@vuepress/plugin-register-components',
       {
@@ -53,8 +39,8 @@ module.exports = {
         componentsDir: path.resolve(__dirname, './demo')
       }
     ],
-    '@vuepress-reco/extract-code',
-    'flowchart'
+    '@vuepress-reco/extract-code'
+    // 'flowchart'
     // require('./plugins/notification/index')
   ]
 }  

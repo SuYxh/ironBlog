@@ -54,19 +54,6 @@
       </div>
     </section>
 
-    <!-- 第四节 -->
-    <section class="wish today">
-      <div class="wish-inner">
-        <div class="text-wrapper">
-          <h1>白校臣</h1>
-          <p class="description">熟练掌握HTML\CSS\JS，精通vue具有独立开发组件经验，熟悉PHP和Node.js</p>
-        </div>
-        <div class="img-wrapper">
-          <img src="./images/today.svg" alt="">
-        </div>
-      </div>
-    </section>
-
     <!-- 主要内容 -->
     <section class="md-content-wrapper">
       <Content/>

@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import examplesData from '../data/examplesData'
+import examplesData from '../data/projectData'
 
 export default {
   data () {
