@@ -455,6 +455,6 @@ categories:
 >
 > - [MDN: CSS Flexible Box Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
 > - [Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
-> - [弹性盒模型Flex指南](http://louiszhai.github.io/2017/01/13/flex/)
+> - [Flex布局之携程]( https://ironc.gitee.io/yidongduanbujuheshipei/xc/ )
 
 
