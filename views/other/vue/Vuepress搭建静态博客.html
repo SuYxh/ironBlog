@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vuepress搭建静态博客 | ironBlog</title>
+    <meta name="description" content="代码千万行, 注释第一行！">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta name="author" content="ironc">
+  <meta name="keywords" content="vuepress,iron,ironc,ironBlog">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#42b983">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/icon_iron.png">
+  <link rel="mask-icon" href="/icon_vuepress_reco.svg" color="#42b983">
+  <meta name="msapplication-TileImage" content="/icon_iron.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.d015bd9a.css" as="style"><link rel="preload" href="/assets/js/app.83e161de.js" as="script"><link rel="preload" href="/assets/js/5.0d63161d.js" as="script"><link rel="preload" href="/assets/js/1.c082d7cd.js" as="script"><link rel="preload" href="/assets/js/82.5f4a0db5.js" as="script"><link rel="prefetch" href="/assets/js/10.5a2bf853.js"><link rel="prefetch" href="/assets/js/100.341d6803.js"><link rel="prefetch" href="/assets/js/101.32e1b467.js"><link rel="prefetch" href="/assets/js/102.2a758bc3.js"><link rel="prefetch" href="/assets/js/103.b23714a9.js"><link rel="prefetch" href="/assets/js/104.8f986640.js"><link rel="prefetch" href="/assets/js/105.0e71d110.js"><link rel="prefetch" href="/assets/js/106.bca2668d.js"><link rel="prefetch" href="/assets/js/107.ee2c7eb9.js"><link rel="prefetch" href="/assets/js/108.727b1d9d.js"><link rel="prefetch" href="/assets/js/109.2ba56e85.js"><link rel="prefetch" href="/assets/js/11.22436645.js"><link rel="prefetch" href="/assets/js/110.4f26b120.js"><link rel="prefetch" href="/assets/js/111.13482f6c.js"><link rel="prefetch" href="/assets/js/112.4e216b6c.js"><link rel="prefetch" href="/assets/js/113.5b300282.js"><link rel="prefetch" href="/assets/js/114.32ff42c8.js"><link rel="prefetch" href="/assets/js/115.776bb002.js"><link rel="prefetch" href="/assets/js/116.44fb07b2.js"><link rel="prefetch" href="/assets/js/117.20a95dce.js"><link rel="prefetch" href="/assets/js/118.0271818c.js"><link rel="prefetch" href="/assets/js/119.72a09782.js"><link rel="prefetch" href="/assets/js/12.efa80d60.js"><link rel="prefetch" href="/assets/js/120.152be925.js"><link rel="prefetch" href="/assets/js/121.28191eb6.js"><link rel="prefetch" href="/assets/js/122.a8a4c9cf.js"><link rel="prefetch" href="/assets/js/123.27d66749.js"><link rel="prefetch" href="/assets/js/124.b7b656b1.js"><link rel="prefetch" href="/assets/js/125.199fc395.js"><link rel="prefetch" href="/assets/js/126.9de89495.js"><link rel="prefetch" href="/assets/js/127.687293a9.js"><link rel="prefetch" href="/assets/js/128.fe9b6bda.js"><link rel="prefetch" href="/assets/js/129.d3f51d3c.js"><link rel="prefetch" href="/assets/js/13.be799c66.js"><link rel="prefetch" href="/assets/js/130.ec2c9ec1.js"><link rel="prefetch" href="/assets/js/131.0b756b70.js"><link rel="prefetch" href="/assets/js/132.7f6b6e60.js"><link rel="prefetch" href="/assets/js/14.06cfb990.js"><link rel="prefetch" href="/assets/js/15.6bdab235.js"><link rel="prefetch" href="/assets/js/16.cc42b80e.js"><link rel="prefetch" href="/assets/js/17.5d94f0e4.js"><link rel="prefetch" href="/assets/js/18.ac053580.js"><link rel="prefetch" href="/assets/js/19.b45f7e40.js"><link rel="prefetch" href="/assets/js/2.cf77cff5.js"><link rel="prefetch" href="/assets/js/20.fa1fd436.js"><link rel="prefetch" href="/assets/js/21.beb35f18.js"><link rel="prefetch" href="/assets/js/22.ac95038e.js"><link rel="prefetch" href="/assets/js/23.51171ad7.js"><link rel="prefetch" href="/assets/js/24.633914c4.js"><link rel="prefetch" href="/assets/js/25.cd8a9e0c.js"><link rel="prefetch" href="/assets/js/26.e085b6e0.js"><link rel="prefetch" href="/assets/js/27.0fd9eec4.js"><link rel="prefetch" href="/assets/js/28.4bd0c161.js"><link rel="prefetch" href="/assets/js/29.c6a3eb07.js"><link rel="prefetch" href="/assets/js/30.b71e5e57.js"><link rel="prefetch" href="/assets/js/31.5b9a5243.js"><link rel="prefetch" href="/assets/js/32.407f3592.js"><link rel="prefetch" href="/assets/js/33.c80d2126.js"><link rel="prefetch" href="/assets/js/34.ee1350f8.js"><link rel="prefetch" href="/assets/js/35.880af7b6.js"><link rel="prefetch" href="/assets/js/36.118c4f3b.js"><link rel="prefetch" href="/assets/js/37.0b949336.js"><link rel="prefetch" href="/assets/js/38.bc0fda1d.js"><link rel="prefetch" href="/assets/js/39.6e73bd30.js"><link rel="prefetch" href="/assets/js/40.d3d450de.js"><link rel="prefetch" href="/assets/js/41.b2075eeb.js"><link rel="prefetch" href="/assets/js/42.8b33d671.js"><link rel="prefetch" href="/assets/js/43.e23aa859.js"><link rel="prefetch" href="/assets/js/44.a9a651f0.js"><link rel="prefetch" href="/assets/js/45.e83d0dd5.js"><link rel="prefetch" href="/assets/js/46.3d3e6d04.js"><link rel="prefetch" href="/assets/js/47.7ae5e9f8.js"><link rel="prefetch" href="/assets/js/48.5f3513ed.js"><link rel="prefetch" href="/assets/js/49.97c34716.js"><link rel="prefetch" href="/assets/js/50.2c3d809d.js"><link rel="prefetch" href="/assets/js/51.4836b073.js"><link rel="prefetch" href="/assets/js/52.913f29a6.js"><link rel="prefetch" href="/assets/js/53.0d2108bd.js"><link rel="prefetch" href="/assets/js/54.c2d90f63.js"><link rel="prefetch" href="/assets/js/55.1dc38ee4.js"><link rel="prefetch" href="/assets/js/56.7a75ea38.js"><link rel="prefetch" href="/assets/js/57.068b0add.js"><link rel="prefetch" href="/assets/js/58.27e01acd.js"><link rel="prefetch" href="/assets/js/59.95b679ec.js"><link rel="prefetch" href="/assets/js/6.4834e6b0.js"><link rel="prefetch" href="/assets/js/60.f439358c.js"><link rel="prefetch" href="/assets/js/61.949320af.js"><link rel="prefetch" href="/assets/js/62.f12236b6.js"><link rel="prefetch" href="/assets/js/63.7005e8d2.js"><link rel="prefetch" href="/assets/js/64.47d4ecc8.js"><link rel="prefetch" href="/assets/js/65.a800c419.js"><link rel="prefetch" href="/assets/js/66.853172d1.js"><link rel="prefetch" href="/assets/js/67.60903ed2.js"><link rel="prefetch" href="/assets/js/68.e075bc7e.js"><link rel="prefetch" href="/assets/js/69.d4ac3843.js"><link rel="prefetch" href="/assets/js/7.4305f9b1.js"><link rel="prefetch" href="/assets/js/70.f98cddc6.js"><link rel="prefetch" href="/assets/js/71.0f05c250.js"><link rel="prefetch" href="/assets/js/72.b5df2f2c.js"><link rel="prefetch" href="/assets/js/73.2e5cf38f.js"><link rel="prefetch" href="/assets/js/74.63206a4d.js"><link rel="prefetch" href="/assets/js/75.04bedc64.js"><link rel="prefetch" href="/assets/js/76.f81cc7ed.js"><link rel="prefetch" href="/assets/js/77.f2dcb4b6.js"><link rel="prefetch" href="/assets/js/78.33e8cb42.js"><link rel="prefetch" href="/assets/js/79.64ddfd00.js"><link rel="prefetch" href="/assets/js/8.129eff9a.js"><link rel="prefetch" href="/assets/js/80.3b02c2c1.js"><link rel="prefetch" href="/assets/js/81.b4e81617.js"><link rel="prefetch" href="/assets/js/83.02064120.js"><link rel="prefetch" href="/assets/js/84.58c915c5.js"><link rel="prefetch" href="/assets/js/85.f0352e26.js"><link rel="prefetch" href="/assets/js/86.559dd1e5.js"><link rel="prefetch" href="/assets/js/87.f9b7caf6.js"><link rel="prefetch" href="/assets/js/88.42c8012e.js"><link rel="prefetch" href="/assets/js/89.5f21f32b.js"><link rel="prefetch" href="/assets/js/9.2cb37f5a.js"><link rel="prefetch" href="/assets/js/90.d798869e.js"><link rel="prefetch" href="/assets/js/91.ccbb24ec.js"><link rel="prefetch" href="/assets/js/92.867ba004.js"><link rel="prefetch" href="/assets/js/93.6e3b5ecd.js"><link rel="prefetch" href="/assets/js/94.2243f750.js"><link rel="prefetch" href="/assets/js/95.ae6d8db5.js"><link rel="prefetch" href="/assets/js/96.245ac3c0.js"><link rel="prefetch" href="/assets/js/97.145df6c7.js"><link rel="prefetch" href="/assets/js/98.8408d1a9.js"><link rel="prefetch" href="/assets/js/99.940917b9.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5bf7fb9f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d015bd9a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><Common><main class="page"><div class="page-title" style="display:none;"><h1>Vuepress搭建静态博客</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>iron</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2020-04-13</span></i> <!----> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      Vuepress
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><p></p><div class="table-of-contents"><ul><li><a href="#_1-快速开始">1.快速开始</a></li><li><a href="#_2-设置导航栏">2.设置导航栏</a></li><li><a href="#_3-侧边栏设置">3.侧边栏设置</a></li><li><a href="#_4-添加head配置和自定义样式">4.添加head配置和自定义样式</a></li><li><a href="#_5-部署上线">5.部署上线</a></li></ul></div><p></p> <h2 id="_1-快速开始"><a href="#_1-快速开始" class="header-anchor">#</a> 1.快速开始</h2> <p>1.安装</p> <div class="language-js extra-class"><pre class="language-js"><code>npm install <span class="token operator">-</span>g vuepress  <span class="token comment">// 或者 yarn global add vuepress </span>
+</code></pre></div><p>2.新建一个项目文件夹,并且初始化</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 创建一个目录 叫 myblog</span>
+mkdir myblog
+<span class="token comment">// 进入这个目录</span>
+cd myblog
+<span class="token comment">// 初始化项目</span>
+npm init <span class="token operator">-</span>y
+</code></pre></div><p>3.创建博客相关目录</p> <p>在myblog目录下新建docs目录，在docs目录里新建.vuepress文件夹，然后在里面创建config.js文件 用于存放配置信息</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">'vuepress'</span><span class="token punctuation">,</span>
+  description<span class="token operator">:</span> <span class="token string">'欢迎来到我的博客'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>4.在docs目录里面创建一个README.md的文件，输入内容</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">--</span><span class="token operator">-</span>
+home<span class="token operator">:</span> <span class="token boolean">true</span>
+heroImage<span class="token operator">:</span> <span class="token operator">/</span>hero<span class="token punctuation">.</span>png
+actionText<span class="token operator">:</span> 快速上手 →
+actionLink<span class="token operator">:</span> <span class="token operator">/</span>zh<span class="token operator">/</span>guide<span class="token operator">/</span>
+features<span class="token operator">:</span>
+<span class="token operator">-</span> title<span class="token operator">:</span> 简洁至上
+  details<span class="token operator">:</span> 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+<span class="token operator">-</span> title<span class="token operator">:</span> Vue驱动
+  details<span class="token operator">:</span> 享受 Vue <span class="token operator">+</span> webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
+<span class="token operator">-</span> title<span class="token operator">:</span> 高性能
+  details<span class="token operator">:</span> VuePress 为每个页面预渲染生成静态的 <span class="token constant">HTML</span>，同时在页面被加载的时候，将作为 <span class="token constant">SPA</span> 运行。
+footer<span class="token operator">:</span> <span class="token constant">MIT</span> Licensed <span class="token operator">|</span> Copyright © <span class="token number">2018</span><span class="token operator">-</span>present Evan You
+<span class="token operator">--</span><span class="token operator">-</span>
+</code></pre></div><p>5.运行博客</p> <p>在package.json里面添加脚本</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token string">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;test&quot;</span><span class="token operator">:</span> <span class="token string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>然后在终端(命令行工具)输入启动命令</p> <div class="language-js extra-class"><pre class="language-js"><code>npm run docs<span class="token operator">:</span>dev
+</code></pre></div><h2 id="_2-设置导航栏"><a href="#_2-设置导航栏" class="header-anchor">#</a> 2.设置导航栏</h2> <p>基础设置</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    nav<span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        text<span class="token operator">:</span> <span class="token string">'Languages'</span><span class="token punctuation">,</span>
+        items<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'Chinese'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/language/chinese'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">'Japanese'</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">'/language/japanese'</span> <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>我的nav配置</p> <div class="language-js extra-class"><pre class="language-js"><code>nav<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">&quot;首页&quot;</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">&quot;/&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">&quot;基础教程&quot;</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">&quot;/basics/&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">&quot;项目实战&quot;</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">&quot;/project/&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">&quot;零散文章&quot;</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">&quot;/article/&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">&quot;一起学习&quot;</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">&quot;/association/&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">&quot;前端工具&quot;</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">&quot;/architect/&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> text<span class="token operator">:</span> <span class="token string">&quot;github&quot;</span><span class="token punctuation">,</span> link<span class="token operator">:</span> <span class="token string">&quot;https://github.com/&quot;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>对应上面的导航栏，我们需要在docs文件夹下去新建basics、project、article、association、architect等文件夹</p> <h2 id="_3-侧边栏设置"><a href="#_3-侧边栏设置" class="header-anchor">#</a> 3.侧边栏设置</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">.</span>
+├─ <span class="token constant">README</span><span class="token punctuation">.</span>md
+├─ contact<span class="token punctuation">.</span>md
+├─ about<span class="token punctuation">.</span>md
+├─ foo<span class="token operator">/</span>
+│  ├─ <span class="token constant">README</span><span class="token punctuation">.</span>md
+│  ├─ one<span class="token punctuation">.</span>md
+│  └─ two<span class="token punctuation">.</span>md
+└─ bar<span class="token operator">/</span>
+   ├─ <span class="token constant">README</span><span class="token punctuation">.</span>md
+   ├─ three<span class="token punctuation">.</span>md
+   └─ four<span class="token punctuation">.</span>md
+</code></pre></div><p>配置：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span>
+    sidebar<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">'/foo/'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">''</span><span class="token punctuation">,</span>     <span class="token comment">/* /foo/ */</span>
+        <span class="token string">'one'</span><span class="token punctuation">,</span>  <span class="token comment">/* /foo/one.html */</span>
+        <span class="token string">'two'</span>   <span class="token comment">/* /foo/two.html */</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+      <span class="token string">'/bar/'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">''</span><span class="token punctuation">,</span>      <span class="token comment">/* /bar/ */</span>
+        <span class="token string">'three'</span><span class="token punctuation">,</span> <span class="token comment">/* /bar/three.html */</span>
+        <span class="token string">'four'</span>   <span class="token comment">/* /bar/four.html */</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+      <span class="token comment">// fallback</span>
+      <span class="token string">'/'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">''</span><span class="token punctuation">,</span>        <span class="token comment">/* / */</span>
+        <span class="token string">'contact'</span><span class="token punctuation">,</span> <span class="token comment">/* /contact.html */</span>
+        <span class="token string">'about'</span>    <span class="token comment">/* /about.html */</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_4-添加head配置和自定义样式"><a href="#_4-添加head配置和自定义样式" class="header-anchor">#</a> 4.添加head配置和自定义样式</h2> <p>静态文件要放到.vuepress/public目录下</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 添加浏览器图标</span>
+head<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">&quot;link&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token operator">:</span> <span class="token string">&quot;icon&quot;</span><span class="token punctuation">,</span> href<span class="token operator">:</span> <span class="token string">&quot;/logo.png&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>自定义样式可以放到.vuepress/styles/index.styl下</p> <div class="language-css extra-class"><pre class="language-css"><code>.theme-default-content 
+  h1
+    border-bottom  3px solid <span class="token function">rgb</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 172<span class="token punctuation">,</span> 193<span class="token punctuation">)</span>
+    padding 20px 0px 20px 0px
+    font-size 24px
+
+ 
+.theme-default-content 
+  h2
+    border-bottom  2px solid <span class="token function">rgb</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 172<span class="token punctuation">,</span> 193<span class="token punctuation">)</span>
+    padding 15px 0px 15px 0px<span class="token punctuation">;</span>
+    font-size 20px
+ 
+.theme-default-content 
+  p 
+    <span class="token property">margin</span><span class="token punctuation">:</span> 15px 0px 15px 0px<span class="token punctuation">;</span>
+
+
+<span class="token comment">/* PrismJS 1.17.1
+https://prismjs.com/download.html#themes=prism-okaidia&amp;languages=markup+css+clike+javascript */</span>
+<span class="token comment">/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */</span>
+
+<span class="token selector">code[class*=&quot;language-&quot;],
+pre[class*=&quot;language-&quot;]</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> #f8f8f2<span class="token punctuation">;</span>
+	<span class="token property">background</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+	<span class="token property">text-shadow</span><span class="token punctuation">:</span> 0 1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token property">font-family</span><span class="token punctuation">:</span> Consolas<span class="token punctuation">,</span> Monaco<span class="token punctuation">,</span> <span class="token string">'Andale Mono'</span><span class="token punctuation">,</span> <span class="token string">'Ubuntu Mono'</span><span class="token punctuation">,</span> monospace<span class="token punctuation">;</span>
+	<span class="token property">font-size</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+	<span class="token property">text-align</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+	<span class="token property">white-space</span><span class="token punctuation">:</span> pre<span class="token punctuation">;</span>
+	<span class="token property">word-spacing</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+	<span class="token property">word-break</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+	<span class="token property">word-wrap</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+	<span class="token property">line-height</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">;</span>
+
+	<span class="token property">-moz-tab-size</span><span class="token punctuation">:</span> 4<span class="token punctuation">;</span>
+	<span class="token property">-o-tab-size</span><span class="token punctuation">:</span> 4<span class="token punctuation">;</span>
+	<span class="token property">tab-size</span><span class="token punctuation">:</span> 4<span class="token punctuation">;</span>
+
+	<span class="token property">-webkit-hyphens</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+	<span class="token property">-moz-hyphens</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+	<span class="token property">-ms-hyphens</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+	<span class="token property">hyphens</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* Code blocks */</span>
+<span class="token selector">pre[class*=&quot;language-&quot;]</span> <span class="token punctuation">{</span>
+	<span class="token property">padding</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span>
+	<span class="token property">margin</span><span class="token punctuation">:</span> .5em 0<span class="token punctuation">;</span>
+	<span class="token property">overflow</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+	<span class="token property">border-radius</span><span class="token punctuation">:</span> 0.3em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">:not(pre) &gt; code[class*=&quot;language-&quot;],
+pre[class*=&quot;language-&quot;]</span> <span class="token punctuation">{</span>
+	<span class="token property">background</span><span class="token punctuation">:</span> #272822<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* Inline code */</span>
+<span class="token selector">:not(pre) &gt; code[class*=&quot;language-&quot;]</span> <span class="token punctuation">{</span>
+	<span class="token property">padding</span><span class="token punctuation">:</span> .1em<span class="token punctuation">;</span>
+	<span class="token property">border-radius</span><span class="token punctuation">:</span> .3em<span class="token punctuation">;</span>
+	<span class="token property">white-space</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> slategray<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.token.punctuation</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> #f8f8f2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.namespace</span> <span class="token punctuation">{</span>
+	<span class="token property">opacity</span><span class="token punctuation">:</span> .7<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> #f92672<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.token.boolean,
+.token.number</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> #ae81ff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> #a6e22e<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> #f8f8f2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> #e6db74<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.token.keyword</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> #66d9ef<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.token.regex,
+.token.important</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> #fd971f<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.token.important,
+.token.bold</span> <span class="token punctuation">{</span>
+	<span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.token.italic</span> <span class="token punctuation">{</span>
+	<span class="token property">font-style</span><span class="token punctuation">:</span> italic<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.token.entity</span> <span class="token punctuation">{</span>
+	<span class="token property">cursor</span><span class="token punctuation">:</span> help<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_5-部署上线"><a href="#_5-部署上线" class="header-anchor">#</a> 5.部署上线</h2> <p>我们将代码部署到coding上，需要完成的步骤有</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token number">1</span>、注册一个coding账号 官网 coding<span class="token punctuation">.</span>net
+
+<span class="token number">2</span>、为coding生成一个ssh公钥
+
+<span class="token number">3</span>、编写脚本将代码自动上传到coding
+
+<span class="token number">4</span>、开启coding静态page服务，绑定私有域名
+</code></pre></div><p>生成ssh的过程：</p> <p>1、进入到自己home目录下的.ssh目录，如果没有就自己新建一个</p> <div class="language-js extra-class"><pre class="language-js"><code>windows一般在这个位置： c<span class="token operator">:</span>\Users\用户名\<span class="token punctuation">.</span>ssh
+Mac： <span class="token operator">~</span>\<span class="token punctuation">.</span>ssh
+</code></pre></div><p>2.生成ssh key，在终端执行命令</p> <div class="language-text extra-class"><pre class="language-text"><code># &quot;-t rsa&quot;表示使用密钥的加密类型，还可以为dsa；-C设置注释文字，
+比如你的邮箱“YourEmail”，不一定要是github注册邮箱
+
+$ssh-keygen -t rsa -C &quot;${YourEmail}&quot;                                    
+
+# 直接回车
+Enter file in which to save the key (/Users/faner/.ssh/id_rsa): 
+# 输入密钥文件授权密码
+Enter passphrase (empty for no passphrase):  
+# 确认密钥文件授权密码                        
+Enter same passphrase again:                                           
+Your identification has been saved in /Users/faner/.ssh/id_rsa.
+Your public key has been saved in /Users/faner/.ssh/id_rsa.pub.
+</code></pre></div><p>生成好以后，你需要将你 .ssh目录下的.pub文件打开，里面有公钥，你需要把这个公钥配置到coding上面</p> <p>接下来，需要在.ssh里面新增一个config文件，文件配置格式如下：</p> <div class="language-js extra-class"><pre class="language-js"><code># Host自己填一个名称 不要带中文就行
+Host vuepress
+# 这里是网站地址
+HostName e<span class="token punctuation">.</span>coding<span class="token punctuation">.</span>net
+# github对应的email或者用户名
+User git
+# coding对应的私钥
+IdentityFile <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>ssh<span class="token operator">/</span>id_rsa_codeing
+</code></pre></div><p>编写一个deploy.sh的脚本文件</p> <div class="language-js extra-class"><pre class="language-js"><code>#<span class="token operator">!</span><span class="token operator">/</span>usr<span class="token operator">/</span>bin<span class="token operator">/</span>env sh
+
+# 确保脚本抛出遇到的错误
+<span class="token keyword">set</span> <span class="token operator">-</span>e
+
+# 生成静态文件
+npm run build
+
+# 进入生成的文件夹
+cd docs<span class="token operator">/</span><span class="token punctuation">.</span>vuepress<span class="token operator">/</span>dist
+
+# 如果是发布到自定义域名
+echo <span class="token string">'这里填你需要绑定的域名'</span> <span class="token operator">&gt;</span> <span class="token constant">CNAME</span>
+
+
+git init
+git config user<span class="token punctuation">.</span>name <span class="token string">&quot;这里填你coding的名字&quot;</span>
+git config user<span class="token punctuation">.</span>email <span class="token string">&quot;这里填你coding的邮箱&quot;</span>
+git add <span class="token operator">-</span><span class="token constant">A</span>
+git commit <span class="token operator">-</span>m <span class="token string">'deploy-coding'</span>
+
+# 如果发布到 https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token operator">&lt;</span><span class="token constant">USERNAME</span><span class="token operator">&gt;</span><span class="token punctuation">.</span>github<span class="token punctuation">.</span>io<span class="token operator">/</span><span class="token operator">&lt;</span><span class="token constant">REPO</span><span class="token operator">&gt;</span>
+# git push <span class="token operator">-</span>f git@github<span class="token punctuation">.</span>com<span class="token operator">:</span><span class="token operator">&lt;</span><span class="token constant">USERNAME</span><span class="token operator">&gt;</span><span class="token operator">/</span><span class="token operator">&lt;</span><span class="token constant">REPO</span><span class="token operator">&gt;</span><span class="token punctuation">.</span>git master<span class="token operator">:</span>gh<span class="token operator">-</span>pages
+git push <span class="token operator">-</span>f git@vuepress<span class="token operator">:</span>ironc<span class="token operator">/</span>VuePress<span class="token punctuation">.</span>git master
+cd <span class="token operator">-</span>
+</code></pre></div></div> <footer class="page-edit" style="display:none;"><div class="edit-link"><a href="https://github.com/SuYxh/ironBlog/edit/master/docs/views/other/vue/Vuepress搭建静态博客.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2020-4-13 12:25:56</span></div></footer> <!----></main> <!----></Common><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div></div></div>
+    <script src="/assets/js/app.83e161de.js" defer></script><script src="/assets/js/5.0d63161d.js" defer></script><script src="/assets/js/1.c082d7cd.js" defer></script><script src="/assets/js/82.5f4a0db5.js" defer></script>
+  </body>
+</html>
